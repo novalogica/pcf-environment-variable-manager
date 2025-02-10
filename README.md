@@ -76,7 +76,7 @@ pac pcf push -pp <your publisher prefix>
 
 Once the Environment Variable Manager control has been deployed, follow these steps to add and use it within your Power Platform environment:
 
-- ### Add the Control to Your App
+### Add the Control to Your App
 
 1. Open your Power Apps environment
 2. Navigate to the desired app
