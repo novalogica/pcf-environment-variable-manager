@@ -189,28 +189,6 @@ table {
   z-index: 1;
 }
 
-
-
-.env-vars-table tr:first-child,
-.env-vars-table td:first-child {
-  border-top-left-radius: 10px;
-}
-
-.env-vars-table tr:first-child,
-.env-vars-table td:last-child {
-  border-top-right-radius: 10px;
-}
-
-.env-vars-table tr:last-child,
-.env-vars-table td:first-child {
-  border-bottom-left-radius: 10px;
-}
-
-.env-vars-table tr:last-child,
-.env-vars-table td:last-child {
-  border-bottom-right-radius: 10px;
-}
-
 .env-vars-table td,
 .env-vars-table th {
   padding: var(--spacing-sm);
