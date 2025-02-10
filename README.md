@@ -2,7 +2,6 @@
 
 | ![Environment Variable Manager](https://github.com/sj-cardoso/environment-variable-manager-pcf/blob/main/EnvironmentVariableManager/screenshots/environment-variable-manager.png) |
 |:--:|
-
 | ***Figure 1:*** *Environment Variable Manager* |
 
 The **Environment Variable Manager** is a powerful **PowerApps Component Framework (PCF)** control that streamlines the visualization and management of environment variables within the Power Platform. This intuitive tool enables users to efficiently view and modify environment variables through an organized table interface.
