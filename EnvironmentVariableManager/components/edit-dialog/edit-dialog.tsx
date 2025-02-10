@@ -23,6 +23,7 @@ interface IDialogProps {
   variableType: EnvTypes;
   variableValue: any;
   onConfirm: (value: any) => void;
+  disabled?: boolean;
 }
 
 export const EditDialog = ({
@@ -30,6 +31,7 @@ export const EditDialog = ({
   variableType,
   variableValue,
   onConfirm,
+  disabled,
 }: IDialogProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [tempValue, setTempValue] = useState(variableValue);
@@ -62,7 +64,7 @@ export const EditDialog = ({
     <Dialog modalType="modal" open={isOpen} onOpenChange={(_, { open }) => setIsOpen(open)}>
       <Tooltip content="Open editor" relationship="label">
         <DialogTrigger disableButtonEnhancement>
-          <Button size="small" icon={<ArrowExpandRegular />} />
+          <Button disabled={disabled} size="small" icon={<ArrowExpandRegular />} />
         </DialogTrigger>
       </Tooltip>
       <DialogSurface>

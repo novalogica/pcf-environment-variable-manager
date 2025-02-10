@@ -9,6 +9,7 @@ interface ValueInputProps {
   currentValue: string;
   handleSwitchChange: (checked: boolean) => void;
   setCurrentValue: (savedValue: string) => void;
+  disabled?: boolean;
 }
 
 export const ValueInput = ({
@@ -16,6 +17,7 @@ export const ValueInput = ({
   currentValue,
   handleSwitchChange,
   setCurrentValue,
+  disabled,
 }: ValueInputProps) => {
   const { type, displayname, schemaname } = variable.definition;
   const varName = displayname || schemaname;
@@ -24,6 +26,7 @@ export const ValueInput = ({
     return (
       <div className="boolean-container">
         <Switch
+          disabled={disabled}
           checked={currentValue === "yes"}
           onChange={(_, data) => handleSwitchChange(data.checked)}
         />
@@ -36,6 +39,7 @@ export const ValueInput = ({
     <div className="action-buttons">
       <Tooltip content={currentValue || "No Current Value"} relationship="description">
         <Input
+          disabled={disabled}
           style={{ minWidth: 80 }}
           size="small"
           type={type === EnvTypes.number ? "number" : "text"}
@@ -45,6 +49,7 @@ export const ValueInput = ({
       </Tooltip>
       {type !== EnvTypes.number && (
         <EditDialog
+          disabled={disabled}
           variableName={varName}
           variableType={type}
           variableValue={currentValue}

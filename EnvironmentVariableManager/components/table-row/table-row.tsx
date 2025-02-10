@@ -117,6 +117,7 @@ export const EnvironmentVariableRow = ({ variable, onUpdate }: EnvironmentVariab
       </TableCell>
       <TableCell data-label="Current Value">
         <ValueInput
+          disabled={isSaving}
           variable={variable}
           currentValue={currentValue}
           handleSwitchChange={handleSwitchChange}

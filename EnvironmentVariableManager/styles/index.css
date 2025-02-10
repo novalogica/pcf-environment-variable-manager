@@ -91,7 +91,6 @@
 
 .badge-container {
   display: flex;
-  gap: var(--spacing-xs);
   align-items: center;
   flex-wrap: wrap;
 }
