@@ -34,14 +34,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   margin: 0;
   background-color: var(--background-secondary);
   padding: var(--spacing-sm);
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: scroll;
 }
 
 .content-wrapper {
@@ -230,12 +228,11 @@ textarea {
   align-items: center;
   background-color: var(--background-default);
   padding: var(--spacing-md);
-  margin: var(--spacing-md) 0;
-  border-top: 1px solid var(--border-color);
-  width: 100%;
+  margin-top: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
   box-sizing: border-box;
   position: sticky;
-  bottom: 0;
   left: 0;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
 }

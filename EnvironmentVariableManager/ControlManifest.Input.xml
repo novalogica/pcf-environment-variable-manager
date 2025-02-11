@@ -27,12 +27,12 @@
       usage="input"
       required="false"
     >
-      <value name="top" display-name-key="Top" description-key="">top-center</value>
-      <value name="topStart" display-name-key="Top Start" description-key="">top-left</value>
-      <value name="topEnd" display-name-key="Top End" description-key="">top-right</value>
-      <value name="bottom" display-name-key="Bottom" description-key="">bottom-center</value>
-      <value name="bottomStart" display-name-key="Bottom Start" description-key="">bottom-left</value>
-      <value name="bottomEnd" display-name-key="Bottom End" description-key="">bottom-right</value>
+      <value name="top-center" display-name-key="Top Center" description-key="">top-center</value>
+      <value name="top-left" display-name-key="Top Left" description-key="">top-left</value>
+      <value name="top-right" display-name-key="Top Right" description-key="">top-right</value>
+      <value name="bottom-center" display-name-key="Bottom Center" description-key="">bottom-center</value>
+      <value name="bottom-left" display-name-key="Bottom Left" description-key="">bottom-left</value>
+      <value name="bottom-right" display-name-key="Bottom Right" description-key="">bottom-right</value>
     </property>
 
     <resources>
