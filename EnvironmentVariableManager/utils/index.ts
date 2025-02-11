@@ -7,7 +7,8 @@ import {
   sortByDate,
   filterVariables,
   getPageRange,
-  validateVariableValue
+  validateVariableValue,
+  getNotificationPosition,
 } from "./utils";
 export {
   sortByDate,
@@ -18,5 +19,6 @@ export {
   formatDateTime,
   formatJSONContent,
   validateJSON,
-  validateVariableValue
+  validateVariableValue,
+  getNotificationPosition,
 };

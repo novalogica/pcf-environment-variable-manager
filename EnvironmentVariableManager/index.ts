@@ -1,6 +1,7 @@
 import { createElement, ReactElement } from "react";
 import App from "./App";
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
+import { getNotificationPosition } from "./utils";
 
 export class EnvironmentVariableManager
   implements ComponentFramework.ReactControl<IInputs, IOutputs>
@@ -18,9 +19,13 @@ export class EnvironmentVariableManager
   }
 
   public updateView(context: ComponentFramework.Context<IInputs>): ReactElement {
+    const position =
+      (context.mode as any).fullPageParam?.notificationPosition ||
+      context.parameters.notificationPosition?.raw;
+
     return createElement(App, {
       context,
-      notificationPosition: context.parameters.notificationPosition?.raw,
+      notificationPosition: getNotificationPosition(position || ""),
     });
   }
 

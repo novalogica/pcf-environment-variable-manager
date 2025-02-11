@@ -1,5 +1,28 @@
 import { EnvTypes, IEnvironmentVariable } from "../interfaces";
 
+type NotificationPosition =
+  | "top-right"
+  | "bottom-right"
+  | "top-center"
+  | "bottom-center"
+  | "top-left"
+  | "bottom-left";
+
+export const getNotificationPosition = (position: string): NotificationPosition => {
+  const validPositions: NotificationPosition[] = [
+    "top-right",
+    "bottom-right",
+    "top-center",
+    "bottom-center",
+    "top-left",
+    "bottom-left",
+  ];
+
+  return validPositions.includes(position as NotificationPosition)
+    ? (position as NotificationPosition)
+    : "top-right";
+};
+
 export const filterVariables = (
   variables: IEnvironmentVariable[],
   filterText: string,

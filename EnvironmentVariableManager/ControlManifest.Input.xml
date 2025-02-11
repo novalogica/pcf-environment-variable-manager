@@ -10,6 +10,15 @@
   >
   
     <property
+      name="column"
+      display-name-key="Column to be attached"
+      description-key="Choose a column where the pcf should render"
+      of-type="Multiple"
+      usage="bound"
+      required="true"
+    />
+
+    <property
       name="notificationPosition"
       display-name-key="Notification Position"
       description-key="Choose the position where the toast message should appear"
